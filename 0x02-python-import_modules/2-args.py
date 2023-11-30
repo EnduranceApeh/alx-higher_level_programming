@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import sys
-arguements = sys.argv[1:]
+from sys import argv
+arguements = argv[1:]
 if __name__ == "__main__":
     if (len(arguements) > 1):
         print(f"{len(arguements)} arguments: ")
