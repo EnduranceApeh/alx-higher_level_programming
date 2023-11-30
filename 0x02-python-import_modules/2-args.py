@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+import sys
+arguements = sys.argv[1:]
 if __name__ == "__main__":
-    import sys
-    arguements = sys.argv[1:]
     if (len(arguements) > 1):
         print("{} arguments: ".format(len(arguements)))
     elif (len(arguements) == 0):
