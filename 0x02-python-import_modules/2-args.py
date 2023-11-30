@@ -1,16 +1,16 @@
 #!/usr/bin/python3
+
 from sys import argv
-arguements = argv[1:]
-if __name__ == "__main__":
-    arg = 1
-    if (len(arguements) > 1):
-        print(f"{len(arguements)} arguments: ")
-    elif (len(arguements) == 0):
-        print(f"{len(arguements)} arguments. ")
+
+# argument count minus the name of the script
+argc = len(argv) - 1
+if __name__ == '__main__':
+    if argc < 1:
+        print("0 arguments.")
     else:
-        print(f"{len(arguements)} argument: ")
-    # iterate through the arguement and print by index starting from index 1
-    length = len(arguements)
-    for index in range(length):
-        arg += index
-        print(f"{arg}: {arguements[index]}")
+        if argc == 1:
+            print(f"{argc} argument:")
+        else:
+            print(f"{argc} arguments:")
+        for index in range(1, argc + 1):
+            print(f"{index}: {argv[index]}")
