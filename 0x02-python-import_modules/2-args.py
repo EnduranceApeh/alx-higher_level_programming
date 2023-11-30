@@ -2,6 +2,7 @@
 from sys import argv
 arguements = argv[1:]
 if __name__ == "__main__":
+    arg = 1
     if (len(arguements) > 1):
         print(f"{len(arguements)} arguments: ")
     elif (len(arguements) == 0):
@@ -11,5 +12,5 @@ if __name__ == "__main__":
     # iterate through the arguement and print by index starting from index 1
     length = len(arguements)
     for index in range(length):
-        arg = 1 + index
+        arg += index
         print(f"{arg}: {arguements[index]}")
