@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 import sys
-arguements = sys.argv[1:]
+arguements = len(sys.argv[1:])
 if __name__ == "__main__":
-    if (len(arguements) > 1):
-        print("{} arguments: ".format(len(arguements)))
+    if (arguements > 1):
+        print("{} arguments: ".format(arguements))
     elif (len(arguements) == 0):
         print("{} arguments. ".format(len(arguements)))
     else:
