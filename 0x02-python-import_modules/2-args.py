@@ -3,11 +3,11 @@ if __name__ == "__main__":
     import sys
     arguements = sys.argv[1:]
     if (len(arguements) > 1):
-        print("{} arguements: ".format(len(arguements)))
+        print("{} arguments: ".format(len(arguements)))
     elif (len(arguements) == 0):
-        print("{} arguements. ".format(len(arguements)))
+        print("{} arguments. ".format(len(arguements)))
     else:
-        print("{} arguement: ".format(len(arguements)))
+        print("{} argument: ".format(len(arguements)))
     # iterate through the arguement and print by index starting from index 1
     length = len(arguements)
     for index in range(length):
