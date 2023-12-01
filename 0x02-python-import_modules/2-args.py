@@ -3,20 +3,20 @@ import sys
 
 
 def argument_count():
-    arguements = sys.argv[1:]
-    if (len(arguements) > 1):
-        print("{} argements: ".format(len(arguements)))
-    elif (len(arguements) < 1):
-        print("{} arguments. ".format(len(arguements)))
-    else:
-        print("{} argument: ".format(len(arguements)))
-    # iterate through the arguement and print by index starting from index 1
-    length = len(arguements)
-    for index in range(length):
-        arg = 1 + index
-        print("{}: {}".format(arg, arguements[index]))
+    length = len(sys.argv)
+    i = 1
+    argu = length - 1
+
+    if length == 2:
+        print("{} argument:".format(argu))
+    elif length == 1:
+        print("{} arguments.".format(argu))
+    elif length > 1:
+        print("{} arguments:".format(argu))
+    while i < length:
+        print("{}: {}".format(i, sys.argv[i]))
+        i += 1
 
 
-# Function call
 if __name__ == "__main__":
     argument_count()
