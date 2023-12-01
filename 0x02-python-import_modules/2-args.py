@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-
-from sys import argv
-
-# argument count minus the name of the script
-argc = len(argv) - 1
-if __name__ == '__main__':
-    if argc < 1:
-        print("0 arguments.")
+def argument_count():
+    import sys
+    arguements = sys.argv[1:]
+    if (len(arguements) > 1):
+        print("{} argements: ".format(len(arguements)))
+    elif (len(arguements) == 0):
+        print("{} arguments. ".format(len(arguements)))
     else:
-        if argc == 1:
-            print(f"{argc} argument:")
-        else:
-            print(f"{argc} arguments:")
-        for index in range(1, argc + 1):
-            print(f"{index}: {argv[index]}")
+        print("{} argument: ".format(len(arguements)))
+    # iterate through the arguement and print by index starting from index 1
+    length = len(arguements)
+    for index in range(length):
+        arg = 1 + index
+        print("{}: {}".format(arg, arguements[index]))
+#Function call
+if __name__ == "__main__":
+    argument_count()
