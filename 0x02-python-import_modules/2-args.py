@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-def argument_count():
+import sys
 
-    import sys
+
+def argument_count():
     arguements = sys.argv[1:]
     if (len(arguements) > 1):
         print("{} argements: ".format(len(arguements)))
-    elif (len(arguements) == 0):
+    elif (len(arguements) < 1):
         print("{} arguments. ".format(len(arguements)))
     else:
         print("{} argument: ".format(len(arguements)))
