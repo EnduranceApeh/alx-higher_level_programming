@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def argument_count():
+
     import sys
     arguements = sys.argv[1:]
     if (len(arguements) > 1):
@@ -13,6 +14,6 @@ def argument_count():
     for index in range(length):
         arg = 1 + index
         print("{}: {}".format(arg, arguements[index]))
-#Function call
+# Function call
 if __name__ == "__main__":
     argument_count()
