@@ -14,6 +14,8 @@ def argument_count():
     for index in range(length):
         arg = 1 + index
         print("{}: {}".format(arg, arguements[index]))
+
+
 # Function call
 if __name__ == "__main__":
     argument_count()
