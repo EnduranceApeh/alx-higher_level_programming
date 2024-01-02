@@ -19,7 +19,7 @@ class Square:
         Attributes:
             __size (int): size of a side of square, defualt to 0 if none
 
-        Raise:
+        Raises:
             TypeError: if size is not int
             ValueError: if size is less than 0
         """
