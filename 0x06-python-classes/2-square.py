@@ -17,7 +17,7 @@ class Square:
         Initialize Square
 
         Attributes:
-            size: size of square
+            __size: size of square
 
         Raise:
             TypeError: if size is not int
