@@ -11,11 +11,13 @@ class Square:
         """
         Attributes:
             size: size of square
-        Raise:
-            TypeError: if size is not an int value.
-            ValueError: if size is less than 0.
         """
         self.__size = size
+        """
+        Raise:
+            TypeError: if size is not int
+            ValueError: if size is less than 0
+        """
         if type(size) != int:
             raise TypeError("size must be an integer")
         if size < 0:
