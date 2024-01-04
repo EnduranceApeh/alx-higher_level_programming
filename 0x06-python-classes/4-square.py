@@ -2,6 +2,7 @@
 """
 Module 4-square
 Define class Square
+Can access and update size
 """
 
 
@@ -13,20 +14,32 @@ class Square:
     """
     def __init__(self, size=0):
         """
-            Attribute:
-                __size: A private attribute, if none the size is 0 by defualt
+        Attribute:
+            __size: A private attribute, if none the size is 0 by defualt
 
-            Raises:
-                TypeError: if size is not integer
-                ValueError: if size is less than 0
+        Raises:
+            TypeError: if size is not integer
+            ValueError: if size is less than 0
         """
         self.__size = size
+
     @property
     def size(self):
+        """
+        Getter
+
+        Return: size
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
+        """
+        Setter
+
+        Args:
+            value: sete size to value, if int >= 0
+        """
         self.__size = value
         if type(value) != int:
             raise TypeError("size must be an integer")
