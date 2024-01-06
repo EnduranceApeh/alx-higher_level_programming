@@ -8,13 +8,23 @@ Define class Rectangle
 class Rectangle:
     """
     class Rectangle definition
+
     Args:
-        width: width of rectangle
-        height: height of rectangle
+        width (int): width of rectangle
+        height (int): height of rectangle
+
+    Functions:
+        __init__(self, width, height)
+        width(self)
+        width(self, value)
+        height(self)
+        height(self, value)
     """
 
     def __init__(self, width=0, height=0):
         """"
+        Initiliaze rectangles
+
         Attributes:
             __width (int): private attribute that store the width of rectangle
             __height (int): private attribute for rectangle height
@@ -40,7 +50,7 @@ class Rectangle:
         Setter
 
         Args:
-            value: set width to value if > 0
+            value (int): set width to value if > 0
         """
         if type(self.width) != int:
             raise TypeError("width must be an integer")
