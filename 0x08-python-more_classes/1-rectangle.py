@@ -32,8 +32,8 @@ class Rectangle:
             TyperError: if width and height is not int type
             ValueError: if width and height is < 0
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
