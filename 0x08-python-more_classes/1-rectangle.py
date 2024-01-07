@@ -26,14 +26,14 @@ class Rectangle:
         Initiliaze rectangles
 
         Attributes:
-            __width (int): private attribute that store the width of rectangle
-            __height (int): private attribute for rectangle height
+            __width (int): private attribute
+            __height (int): private attribute
         Raises:
             TyperError: if width and height is not int type
             ValueError: if width and height is < 0
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
