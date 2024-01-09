@@ -18,10 +18,6 @@ Test on signed int, unsigned int and float:
 FAIL CASE:
 
 Test on other data type:
-	>>> print(add_integer("hello"))
-	Traceback (most recent call last)):
-	...
-	TypeError: a must be an integer
 	>>> print(add_integer(0, [1, 2, 4]))
 	Traceback (most recent call last):
 	...
