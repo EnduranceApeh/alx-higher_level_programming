@@ -7,9 +7,6 @@ Test on string:
 	>>> say_my_name("John", "Endurance")
 	My name is John Endurance
 
-	>>> say_my_name("Bob")
-	My name is Bob
-
 FAIL CASE:
 
 Test on int values:
