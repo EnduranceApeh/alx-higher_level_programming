@@ -19,18 +19,18 @@ FAIL CASE:
 
 Test on other data type:
 	>>> print(add_integer("hello"))
-	Traceback (most recent call last))
+	Traceback (most recent call last)):
 	...
 	TypeError: a must be an integer
 	>>> print(add_integer(0, [1, 2, 4]))
-	Traceback (most recent call last)
+	Traceback (most recent call last):
 	...
 	TypeError: b must be an integer
 	>>> print(add_integer(None))
-	Traceback (most recent call last)
+	Traceback (most recent call last):
 	...
 	TypeError: a must be an integer
 	>>> print(add_integer(2, 5, 6))
-	Traceback (most recent call last)
+	Traceback (most recent call last):
 	...
 	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
