@@ -2,7 +2,7 @@
 """"
 Module 0-add_integer
 This method return a int sum
-Recieves two args int or float data type,typecast float to int before returning sum
+Recieves two args int or float data type,typecast and return a + b
 """
 
 
