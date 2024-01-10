@@ -5,6 +5,7 @@ Module 3-to_json_string
 This function retun a JSON representation of an object
 """
 
+
 def to_json_string(my_obj):
     """Return JSON representaion on an object"""
 
