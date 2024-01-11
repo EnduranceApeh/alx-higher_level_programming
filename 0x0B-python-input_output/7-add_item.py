@@ -10,7 +10,8 @@ import json
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-# Add all args to a list
 args_list = sys.argv[1:]
-load_from_json_file("add_item.json")
-save_to_json_file(args_list, "add_item.json")
+filename = "add_item.json"
+my_list = load_from_json_file(filename)
+combined_list = my_list + args_list
+save_to_json_file(combined_list, filename)
