@@ -24,7 +24,7 @@ Test on int:
 	>>> another_list.append(-16)
 	>>> print(another_list)
 	[34, -19, -16]
-	>>> my_list.print_sorted()
+	>>> another_list.print_sorted()
 	[-19, -16, 34]
 	>>> print(another_list)
 	[34, -19, -16]
@@ -40,8 +40,11 @@ Test list with only one element:
 	[-3211]
 
 Test on type, isinstance, id:
-	>>> l = MyList
-	>>> print(type(l))
-	<class '__main__.MyList'>
-	>>> print(isinstance(l, MyList))
+	>>> type(MyList())
+	<class '1-my_list.MyList'>
+
+	>>> isinstance(MyList, object)
+	True
+
+	>>> issubclass(MyList, list)
 	True
