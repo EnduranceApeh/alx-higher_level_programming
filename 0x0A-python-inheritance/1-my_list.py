@@ -5,6 +5,7 @@ A class that inherit from list
 print sorted list
 """
 
+
 class MyList(list):
     """
     Inherit from list
