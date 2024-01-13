@@ -1,3 +1,5 @@
+# run test with python3 -m doctest -v ./tests/[filename].txt
+
 First import module to be tested:
 	>>> MyList = __import__('1-my_list').MyList
 
