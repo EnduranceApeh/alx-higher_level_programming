@@ -32,7 +32,8 @@ class Rectangle(BaseGeometry):
     def area(self):
         """extend parent area method"""
         return self.__width*self.__height
-    
+
     def __str__(self):
         """print [Rectangle] <width>/<height>"""
-        return "[{:s}] {:d}/{:d}".format(self.__class__.__name__, self.__width, self.__height)
+        return "[{:s}] {:d}/{:d}".format(self.__class__.__name__,
+                                         self.__width, self.__height)
