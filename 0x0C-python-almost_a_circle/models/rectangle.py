@@ -34,7 +34,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """width getter"""
-        return  self.__width
+        return self.__width
 
     @property
     def height(self):
@@ -93,13 +93,18 @@ class Rectangle(Base):
 
     def display(self):
         """print rectangle instance with the character #"""
+        for i in range(1, self.__y):
+            print("\n")
         for i in range(self.__height):
+            for i in range(self.__x):
+                print(" ", end="")
             for i in range(self.__width):
-                print("#",end="")
+                print("#", end="")
             print()
         print(end="")
 
     def __str__(self):
         """Return string representation of object"""
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
-                                                self.id,self.__x,self.__y,self.__width,self.__height)
+                                                self.id, self.__x, self.__y,
+                                                self.__width, self.__height)
