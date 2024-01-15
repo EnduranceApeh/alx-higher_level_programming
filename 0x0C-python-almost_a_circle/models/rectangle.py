@@ -93,15 +93,14 @@ class Rectangle(Base):
 
     def display(self):
         """print rectangle instance with the character #"""
-        for i in range(1, self.__y):
-            print("\n")
-        for i in range(self.__height):
+        for y in range(self.__y):
+            print("")
+        for row in range(self.__height):
             for i in range(self.__x):
                 print(" ", end="")
-            for i in range(self.__width):
+            for col in range(self.__width):
                 print("#", end="")
             print()
-        print(end="")
 
     def __str__(self):
         """Return string representation of object"""
