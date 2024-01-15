@@ -10,7 +10,13 @@ from models.base import Base
 
 class Rectangle(Base):
     """
-    definning class Rectangle which inherit from Base
+    definning class Rectangle which inherit from Basei
+    Inherited attribute:
+        id
+
+    class Attributes:
+        __width     __height
+        __y         __x
 
     Methods:
         __init__(self, width, hheight, x=0, y=0, id=None)
@@ -80,3 +86,20 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
+
+    def area(self):
+        """Returns the area value of rectangle"""
+        return self.__width * self.__height
+
+    def display(self):
+        """print rectangle instance with the character #"""
+        for i in range(self.__height):
+            for i in range(self.__width):
+                print("#",end="")
+            print()
+        print(end="")
+
+    def __str__(self):
+        """Return string representation of object"""
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id,self.__x,self.__y,self.__width,self.__height)
