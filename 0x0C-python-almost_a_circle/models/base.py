@@ -38,3 +38,10 @@ class Base:
         else:
             json_str = json.dumps(list_dictionaries)
             return json_str
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        data = to_json_string(list_objs)
+        file_name = __class__.name__.json
+
+        with open(file_name, 'w', encode="utf-8") as json_file:
