@@ -2,7 +2,7 @@
 // convert string to integer and print
 
 const argument = process.argv[2];
-const number = parseInt(argument);
+const number = Number(argument);
 
 if (!isNaN(number)) {
   console.log('My number: ', number);
