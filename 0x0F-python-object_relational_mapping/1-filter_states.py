@@ -16,7 +16,7 @@ if __name__ == "__main__":
             database=argv[3])
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
     states = cursor
 
     for state in states:
