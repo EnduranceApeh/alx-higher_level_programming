@@ -16,7 +16,11 @@ if __name__ == "__main__":
             database=argv[3])
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE '{:s}' ORDER BY id ASC".format(argv[4]))
+    sql_cmd = """SELECT *
+    FROM states
+    WHERE name LIKE '{:s}'ORDER BY id ASC""".format(argv[4])
+
+    cursor.execute(sql_cmd)
     states = cursor
 
     for state in states:
