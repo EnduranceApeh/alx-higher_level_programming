@@ -2,5 +2,4 @@
 # Bash script that takes in a URL
 # sends a request to that URL
 # Displays the size of the body of the response
-
-curl -sI "$1" | grep 'Content-Length:' | cut -f2 -d' '
+curl -s "$1" | wc -c
