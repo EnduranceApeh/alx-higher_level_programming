@@ -3,5 +3,4 @@
 # sends a request to that URL
 # Displays the size of the body of the response
 
-URL=$1
-curl -sI "$URL" | grep 'Content-Length:' | cut -f2 -d' '
+curl -sI "$1" | grep 'Content-Length:' | cut -f2 -d' '
