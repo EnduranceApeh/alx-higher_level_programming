@@ -9,9 +9,8 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    url = sys.argv[1] + '/post'
-    data = {}
-    data['email'] = str(sys.argv[2])
+    url = sys.argv[1] 
+    data['email'] =(sys.argv[2])
 
     respond = requests.post(url, data=data)
-    print(f"Your email is: {respond.text}")
+    print(respond.text)
