@@ -10,6 +10,6 @@ import sys
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    payload= {'email': sys.argv[2]}
+    payload = {'email': sys.argv[2]}
     respond = requests.post(url, data=payload)
     print(respond.text)
