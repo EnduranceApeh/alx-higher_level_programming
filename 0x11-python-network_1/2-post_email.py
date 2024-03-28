@@ -17,6 +17,7 @@ if __name__ == "__main__":
     url = sys.argv[1]
     full_url = url + "?" + email
     """Send POST request"""
-    with urllib.request.urlopen(full_url) as response:
+    req = urllib.request.Request(full_url, method='POST')
+    with urllib.request.urlopen(req) as response:
         body = response.read().decode('utf-8')
         print(body)
