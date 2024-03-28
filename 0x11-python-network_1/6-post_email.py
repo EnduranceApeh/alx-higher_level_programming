@@ -13,5 +13,5 @@ if __name__ == "__main__":
     data = {}
     data['email'] = str(sys.argv[2])
 
-    respond = requests.post(url, params=data)
-    print(f"Your email is: {respond.email}")
+    respond = requests.post(url, data=data)
+    print(f"Your email is: {respond.text}")
