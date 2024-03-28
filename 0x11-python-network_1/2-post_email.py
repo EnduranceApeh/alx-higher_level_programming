@@ -13,11 +13,11 @@ if __name__ == "__main__":
     data = {}
     data['email'] = str(sys.argv[2])
     email = urllib.parse.urlencode(data)
+    email = email.encode('ascii')
     """Get the url"""
     url = sys.argv[1]
-    full_url = url + "?" + email
     """Send POST request"""
-    req = urllib.request.Request(full_url, method='POST')
+    req = urllib.request.Request(url, email)
     with urllib.request.urlopen(req) as response:
         body = response.read().decode('utf-8')
         print(body)
