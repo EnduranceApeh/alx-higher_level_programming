@@ -10,7 +10,7 @@ import requests
 if __name__ == "__main__":
     try:
         r = requests.get(argv[1])
+        r.raise_for_status()
         print(r.text)
-        # r.return_status_code
     except requests.HTTPError as e:
         print(f"Error code: {e}")
